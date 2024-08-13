@@ -1,7 +1,7 @@
-import Image from "next/image";
+import StartingPageContent from "../components/starting-page";
 
 export default function Home() {
   return (
-    <div>Starting</div>
+    <StartingPageContent />
   );
 }
