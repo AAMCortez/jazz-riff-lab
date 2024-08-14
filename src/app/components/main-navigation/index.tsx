@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {};
-let session = true;
+let session = false;
 
 export default function MainNavigation({}: Props) {
    return (
@@ -14,7 +14,7 @@ export default function MainNavigation({}: Props) {
             <ul className="list-none m-0 p-0 flex items-baseline">
                {!session && (
                   <li className="m-0 mx-4">
-                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/auth">Login</Link>
+                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/login">Login</Link>
                   </li>
                )}
                {session && (
