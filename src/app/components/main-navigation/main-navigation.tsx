@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {};
-let session = false;
+let session = true;
 
 export default function MainNavigation({}: Props) {
    return (
@@ -15,6 +15,16 @@ export default function MainNavigation({}: Props) {
                {!session && (
                   <li className="m-0 mx-4">
                      <Link className="no-underline text-white font-bold hover:text-red-900" href="/login">Login</Link>
+                  </li>
+               )}
+               {session && (
+                  <li className="m-0 mx-4">
+                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/warmup">Warm up!</Link>
+                  </li>
+               )}
+               {session && (
+                  <li className="m-0 mx-4">
+                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/practice">Practice</Link>
                   </li>
                )}
                {session && (
