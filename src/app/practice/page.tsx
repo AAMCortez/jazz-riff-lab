@@ -24,6 +24,8 @@ function Practice({}: Props) {
                <h4>music name</h4>
                <h5>by: artist</h5>
                <button>play this on youtube?</button>
+               <input type="checkbox" id="vehicle1" name="vehicle1" />
+               <label>Learnt</label>
             </li>
          </ul>
       </div>

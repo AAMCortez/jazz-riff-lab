@@ -4,6 +4,7 @@ import React from "react";
 type Props = {};
 let session = true;
 
+
 export default function MainNavigation({}: Props) {
    return (
       <header className="w-full h-20 bg-cyan-700 shadow-md flex justify-between items-center px-[10%]">
@@ -14,22 +15,42 @@ export default function MainNavigation({}: Props) {
             <ul className="list-none m-0 p-0 flex items-baseline">
                {!session && (
                   <li className="m-0 mx-4">
-                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/login">Login</Link>
+                     <Link
+                        className="no-underline text-white font-bold hover:text-red-900"
+                        href="/login"
+                     >
+                        Login
+                     </Link>
                   </li>
                )}
                {session && (
                   <li className="m-0 mx-4">
-                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/warmup">Warm up!</Link>
+                     <Link
+                        className="no-underline text-white font-bold hover:text-red-900"
+                        href="/warmup"
+                     >
+                        Warm up!
+                     </Link>
                   </li>
                )}
                {session && (
                   <li className="m-0 mx-4">
-                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/practice">Practice</Link>
+                     <Link
+                        className="no-underline text-white font-bold hover:text-red-900"
+                        href="/practice"
+                     >
+                        Practice
+                     </Link>
                   </li>
                )}
                {session && (
                   <li className="m-0 mx-4">
-                     <Link className="no-underline text-white font-bold hover:text-red-900" href="/profile">Profile</Link>
+                     <Link
+                        className="no-underline text-white font-bold hover:text-red-900"
+                        href="/profile"
+                     >
+                        Profile
+                     </Link>
                   </li>
                )}
                {session && (
