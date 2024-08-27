@@ -11,6 +11,7 @@ export default function MainNavigation({}: Props) {
          <Link className="no-underline text-white font-bold" href="/">
             <div className="font-lato text-2xl text-white m-0">Home</div>
          </Link>
+         {/*Metronome needs to go somewhere else */}
          <Link className="no-underline text-white font-bold" href="/metronome">
             <div className="font-lato text-2xl text-white m-0">Metronome</div>
          </Link>
