@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {};
-let session = true;
+let session = false;
 
 
 export default function MainNavigation({}: Props) {
@@ -24,6 +24,12 @@ export default function MainNavigation({}: Props) {
                         href="/login"
                      >
                         Login
+                     </Link>
+                     <Link
+                        className="no-underline text-white font-bold hover:text-red-900"
+                        href="/signup"
+                     >
+                        Signup
                      </Link>
                   </li>
                )}
